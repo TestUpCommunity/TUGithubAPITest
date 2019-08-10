@@ -8,3 +8,4 @@ def env():
     config.read('../data/data.ini')
     api_root_url=config[os.environ['env']]['api_root_url']
     yield Env(api_root_url=api_root_url,token=os.environ['token'])
+
